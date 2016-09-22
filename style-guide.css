@@ -149,11 +149,8 @@ xButtons
 .btn {
   border: none;
   box-shadow: none;
-  border-radius: .25em;
-  font-size: 1.4rem;
+  border-radius: 1.2rem;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  padding: .6em 2.2em;
   cursor: pointer;
   background: #0C486C; }
   .btn:focus {
@@ -165,16 +162,32 @@ xButtons
     .no-touch .btn.btn-success:hover {
       background: #82d485; }
   .btn.btn-alert {
-    background: #00B3CC; }
+    color: #ffffff;
+    background: transparent;
+    background: #0C486C;
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid #0C486C;
+    padding: 10px 40px;
+    font-size: 27px;
+    transition: all 300ms ease-in-out; }
     .no-touch .btn.btn-alert:hover {
-      background: #00c9e6; }
+      color: #0C486C;
+      background: #ffffff;
+      border: 3px solid #ffffff; }
   .btn.btn-outline {
     color: #0C486C;
     background: transparent;
-    box-shadow: inset 0 0 0 1px #0C486C; }
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid #0C486C;
+    padding: 10px 40px;
+    font-size: 27px;
+    transition: all 300ms ease-in-out; }
     .no-touch .btn.btn-outline:hover {
-      color: #ffffff;
-      background: #0C486C; }
+      color: #00B3CC;
+      background: #ffffff;
+      border: 3px solid #00B3CC; }
   @media only screen and (min-width: 768px) {
     .btn {
       font-size: 1.6rem; } }
