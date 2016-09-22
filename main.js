@@ -54,13 +54,25 @@ jQuery(document).ready(function($){
 	********************/
 	var heading = $('#typography h1'),
 		headingDescriptionText = heading.children('span').eq(0),
-		body = heading.next('p'),
+		heading2 = $('#typography h2'),
+		headingDescriptionText2 = heading2.children('span').eq(0),
+		heading3 = $('#typography h3'),
+		headingDescriptionText3 = heading3.children('span').eq(0),
+		heading4 = $('#typography h4'),
+		headingDescriptionText4 = heading4.children('span').eq(0),
+		body = $('#typography p'),
 		bodyDescriptionText = body.children('span').eq(0);
-		
+
 	setTypography(heading, headingDescriptionText);
+	setTypography(heading2, headingDescriptionText2);
+	setTypography(heading3, headingDescriptionText3);
+	setTypography(heading4, headingDescriptionText4);
 	setTypography(body, bodyDescriptionText);
 	$(window).on('resize', function(){
 		setTypography(heading, headingDescriptionText);
+		setTypography(heading2, headingDescriptionText2);
+		setTypography(heading3, headingDescriptionText3);
+		setTypography(heading4, headingDescriptionText4);
 		setTypography(body, bodyDescriptionText);
 	});
 
@@ -70,7 +82,7 @@ jQuery(document).ready(function($){
 			fontWeight = element.css('font-weight');
 		textElement.text(fontWeight + ' '+ fontFamily+' '+fontSize );
 	}
-
+	
 	/*******************
 		main  navigation
 	********************/
