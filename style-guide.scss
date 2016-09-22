@@ -142,7 +142,7 @@ main > h1 {
 
 	@include MQ(L) {
 		/* title goes into the header on big devices */
-		color: $color-2;
+		color: $color-1;
 	}
 }
 
