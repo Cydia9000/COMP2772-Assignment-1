@@ -27,6 +27,7 @@ xBackground
 body {
 	/* this is the page background */
 	background-color: $color-2;
+	font-family: $secondary-font;
 }
 
 /* --------------------------------
@@ -156,58 +157,115 @@ h1, h2, h3, h4, h5, h6 {
 	color: $color-1;
 }
 
-body {
+p {
 	font-family: $secondary-font;
 	color: $color-1;
 }
 
 h1 {
-	font-size: 2.4rem;
+	font-size: 3.2rem;
 	font-weight: 900;
 	text-transform: uppercase;
 	line-height: 1.2;
 	margin: 0 0 .4em;
 
 	@include MQ(S) {
-		font-size: 3.2rem;
+		font-size: 4rem;
 	}
 
 	@include MQ(M) {
-		font-size: 4rem;
+		font-size: 5.2rem;
 	}
 }
 
 h2 {
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 1em 0;
+		line-height: 2.5rem;
+		font-size: 2.3rem;
+		text-transform: uppercase;
+		font-weight: 900;
 
-	@include MQ(S) {
-		font-size: 1.8rem;
-		margin: 1em 0 1.4em;
-	}
+		@include MQ(S) {
+			font-size: 3.1rem;
+			line-height: 2.8rem;
+		}
+
+		@include MQ(M) {
+			font-size: 4.2rem;
+			line-height: 3.8rem;
+		}
 }
 
-section > h2::before {
+h3 {
+		line-height: 1.8rem;
+		font-size: 2.0rem;
+		text-transform: uppercase;
+		font-weight: 900;
+
+		@include MQ(S) {
+			font-size: 2.4rem;
+			line-height: 1.8rem;
+			margin: 1em 0 1.4em;
+		}
+
+		@include MQ(M) {
+			font-size: 3.3rem;
+			line-height: 2.9rem;
+		}
+}
+
+h4 {
+		line-height: 1.5rem;
+		font-size: 1.7rem;
+		text-transform: uppercase;
+		font-weight: 900;
+
+		@include MQ(S) {
+			font-size: 2.0rem;
+			line-height: 1.8rem;
+			margin: 1em 0 1.4em;
+		}
+
+		@include MQ(M) {
+			font-size: 2.8rem;
+			line-height: 2.5rem;
+		}
+}
+
+section > h1::before {
 	/* number before each section title */
 	color: $color-1;
 }
 
 p {
-	font-size: 1.4rem;
-	line-height: 1.4;
+
+	font-size: 1.3rem;
+	line-height: 1.8rem;
 	color: $color-1;
 
 	a {
 		color: $color-1;
-		text-decoration: underline;
+		border-bottom: 1px solid;
+		border-bottom-color: $color-3;
+
+		&:hover {
+			color: $color-3;
+		}
+		&:visited {
+			color: $color-3;
+		}
+
 	}
 
 	@include MQ(S) {
 		font-size: 1.6rem;
-		line-height: 1.6;
+		line-height: 1.8rem;
+	}
+	@include MQ(M) {
+		font-size: 2.8rem;
+		line-height: 3.9rem;
 	}
 }
+
 
 /* --------------------------------
 
