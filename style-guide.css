@@ -5,7 +5,9 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #ffffff; }
+  background-color: #ffffff; 
+    font-family: "Roboto", sans-serif; 
+}
 
 /* --------------------------------
 
@@ -99,47 +101,92 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Titillium Web", sans-serif;
   color: #0C486C; }
 
-body {
+p {
   font-family: "Roboto", sans-serif;
   color: #0C486C; }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1.2;
   margin: 0 0 .4em; }
   @media only screen and (min-width: 768px) {
     h1 {
-      font-size: 3.2rem; } }
+      font-size: 4rem; } }
   @media only screen and (min-width: 1024px) {
     h1 {
-      font-size: 4rem; } }
+      font-size: 5.2rem; } }
 
 h2 {
-  font-weight: bold;
+  line-height: 2.5rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
-  margin: 1em 0; }
+  font-weight: 900; }
   @media only screen and (min-width: 768px) {
     h2 {
-      font-size: 1.8rem;
-      margin: 1em 0 1.4em; } }
+      font-size: 3.1rem;
+      line-height: 2.8rem; } }
+  @media only screen and (min-width: 1024px) {
+    h2 {
+      font-size: 4.2rem;
+      line-height: 3.8rem; } }
 
-section > h2::before {
+h3 {
+  line-height: 1.8rem;
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  font-weight: 900; }
+  @media only screen and (min-width: 768px) {
+    h3 {
+      font-size: 2.4rem;
+      line-height: 1.8rem;
+      margin: 1em 0 1.4em; } }
+  @media only screen and (min-width: 1024px) {
+    h3 {
+      font-size: 3.3rem;
+      line-height: 2.9rem; } }
+
+h4 {
+  line-height: 1.5rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 900; }
+  @media only screen and (min-width: 768px) {
+    h4 {
+      font-size: 2.0rem;
+      line-height: 1.8rem;
+      margin: 1em 0 1.4em; } }
+  @media only screen and (min-width: 1024px) {
+    h4 {
+      font-size: 2.8rem;
+      line-height: 2.5rem; } }
+
+section > h1::before {
   /* number before each section title */
   color: #0C486C; }
 
 p {
-  font-size: 1.4rem;
-  line-height: 1.4;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
   color: #0C486C; }
   p a {
     color: #0C486C;
-    text-decoration: underline; }
+    border-bottom: 1px solid;
+    border-bottom-color: #00B3CC; }
+    p a:hover {
+      color: #00B3CC; }
+    p a:visited {
+      color: #00B3CC; }
   @media only screen and (min-width: 768px) {
     p {
       font-size: 1.6rem;
-      line-height: 1.6; } }
+      line-height: 1.8rem; } }
+  @media only screen and (min-width: 1024px) {
+    p {
+      font-size: 2.8rem;
+      line-height: 3.9rem; } }
+
 
 /* --------------------------------
 
