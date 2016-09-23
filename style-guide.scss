@@ -311,10 +311,6 @@ xButtons
 		display: inline-block;
 		text-decoration: none;
 		transition: all 300ms ease-in-out;
-		//line-height: normal;
-		//padding: 10px 40px;
-		//padding: 0.625rem 2.5rem;
-		//box-shadow: inset 0 0 0 1px $color-1;
 
 
 	.no-touch &:hover {
@@ -330,10 +326,6 @@ xButtons
 			display: inline-block;
 			text-decoration: none;
 			transition: all 300ms ease-in-out;
-			//line-height: normal;
-			//box-shadow: inset 0 0 0 1px $color-1;
-			//padding: 10px 40px;
-			//padding: 0.625rem 2.5rem;
 
 		.no-touch &:hover {
 			color: $color-3;
@@ -361,8 +353,18 @@ xIcons
 
 .cd-icons li {
 	/* icons size */
-	width: 32px;
-	height: 32px;
+	width: 25px;
+	height: 25px;
+
+	@include MQ(S) {
+		width: 40px;
+		height: 40px;
+	}
+
+	@include MQ(M) {
+		width: 56px;
+		height: 56px;
+	}
 }
 
 /* --------------------------------
