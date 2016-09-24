@@ -196,10 +196,14 @@ xButtons
 .btn {
   border: none;
   box-shadow: none;
-  border-radius: 1.2rem;
+  border-radius: .50em;
+  font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  padding: 0.5em 1.8em;
   cursor: pointer;
-  background: #0C486C; }
+  background: #0C486C;
+  border: 1px solid #00B3CC; }
   .btn:focus {
     outline: none; }
   .no-touch .btn:hover {
@@ -211,12 +215,10 @@ xButtons
   .btn.btn-alert {
     color: #ffffff;
     background: transparent;
+    border: solid #ffffff;
     background: #0C486C;
     display: inline-block;
     text-decoration: none;
-    border: 3px solid #0C486C;
-    padding: 10px 40px;
-    font-size: 27px;
     transition: all 300ms ease-in-out; }
     .no-touch .btn.btn-alert:hover {
       color: #0C486C;
@@ -227,9 +229,6 @@ xButtons
     background: transparent;
     display: inline-block;
     text-decoration: none;
-    border: 3px solid #0C486C;
-    padding: 10px 40px;
-    font-size: 27px;
     transition: all 300ms ease-in-out; }
     .no-touch .btn.btn-outline:hover {
       color: #00B3CC;
@@ -237,11 +236,13 @@ xButtons
       border: 3px solid #00B3CC; }
   @media only screen and (min-width: 768px) {
     .btn {
-      font-size: 1.6rem; } }
+      font-size: 2.6rem;
+      border: 3px solid #0C486C; } }
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
   color: #0C486C; }
+
 
 /* --------------------------------
 
@@ -250,8 +251,16 @@ xIcons
 -------------------------------- */
 .cd-icons li {
   /* icons size */
-  width: 32px;
-  height: 32px; }
+  width: 25px;
+  height: 25px; }
+  @media only screen and (min-width: 768px) {
+    .cd-icons li {
+      width: 40px;
+      height: 40px; } }
+  @media only screen and (min-width: 1024px) {
+    .cd-icons li {
+      width: 56px;
+      height: 56px; } }
 
 /* --------------------------------
 
