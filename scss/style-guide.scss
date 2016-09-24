@@ -255,6 +255,10 @@ p {
 		}
 
 	}
+	
+	b {
+		font-weight: bold;
+	}
 
 	@include MQ(S) {
 		font-size: 1.6rem;
